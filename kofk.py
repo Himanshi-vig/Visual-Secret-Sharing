@@ -51,7 +51,7 @@ def makeW (k):
 def makePiSigma (W):
    pi = []
    sigma = []
-   for i in xrange(0, len(W)+1):
+   for i in range(0, len(W)+1):
       listing = [list(subset) for subset in itertools.combinations(W, i)]
       if (len(subset)%2 == 0):
          pi.extend(listing)
